@@ -48,6 +48,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 190px;
+}
+
+#navbar a:hover{
+    text-shadow: 0 0px 15px white;
 }
 
 #nav_logo {
@@ -72,6 +77,8 @@ header {
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
+    color: #333;
 }
 
 #home {
@@ -176,4 +183,20 @@ footer {
 #about img {
     width: 200px;
     height: 200px;
+}
+
+#contact {
+    text-align: center;
+}
+
+.social-media-buttons a {
+    color:#ffcc00 ;
+}
+
+.social-media-buttons a:hover {
+    color:#0400ff;
+    }
+
+a {
+    text-decoration: none;
 }
