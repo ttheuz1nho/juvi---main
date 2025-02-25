@@ -13,6 +13,10 @@ document.addEventListener('click', function(event) {
     }
 });
 
+
+
+
+
 //document.getElementById('btn-default').addEventListener('click', function(){
 //   const aboutImage = document.getElementById('aboutImage')
 //   aboutImage.src = 'imagens/maia.png';
