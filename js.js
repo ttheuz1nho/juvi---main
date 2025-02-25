@@ -12,3 +12,9 @@ document.addEventListener('click', function(event) {
         navList.classList.remove('active');
     }
 });
+
+//document.getElementById('btn-default').addEventListener('click', function(){
+//   const aboutImage = document.getElementById('aboutImage')
+//   aboutImage.src = 'imagens/maia.png';
+//   aboutImage.alt = 'maialinda';
+//})
