@@ -20,12 +20,14 @@ header {
 
 #mobile_btn {
     display: none; /* Oculta o botão por padrão */
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
 }
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
 
 @media (max-width: 768px) {
     #mobile_btn {
@@ -40,21 +42,36 @@ header {
         display: flex; /* Mostra a lista quando o menu mobile está ativo */
         flex-direction: column;
         position: fixed;
-        top: 60px; /* Ajuste conforme a altura do header */
+        top: 70px; /* Ajuste conforme a altura do header */
         right: 0;
         background-color: rgba(255, 255, 255, 0.95); /* Cor de fundo do menu */
-        width: 100%;
+        width: 50%;
         padding: 1rem;
         z-index: 1000; /* Garante que o menu fique acima de outros elementos */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
     }
+
+    #banner img{
+        display: none;
+    }
+
 }
 
 #navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 190px;
+    margin-right: 0 1rem;
+}
+
+#nav_list.active .nav-item a {
+    color: #333; /* Cor do texto no menu mobile */
+    padding: 0.5rem 0;
+    display: block;
+}
+
+#nav_list.active .nav-item a:hover {
+    color: #01c51b; /* Cor ao passar o mouse */
 }
 
 #navbar a:hover{
@@ -64,12 +81,6 @@ header {
 #nav_logo {
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-#nav_list {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
 }
 
 #nav_list .nav-item a {
@@ -111,7 +122,7 @@ header {
     width: 200px; /* Largura fixa */
     height: 200px; /* Altura fixa */
     border-radius: 50%; /* Borda arredondada */
-    margin-right: 200px;
+    margin-right: 2rem;
 }
 
 #menu {
@@ -126,9 +137,9 @@ header {
 }
 
 #dishes {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .dish {
